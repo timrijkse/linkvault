@@ -1,0 +1,13 @@
+---
+description: General project rules for LinkVault
+alwaysApply: true
+---
+
+# LinkVault Project Rules
+
+- Tech stack: Next.js 16, TypeScript, Tailwind CSS
+- Use App Router (src/app/)
+- All components in src/components/
+- Use English for code, Dutch for UI text
+- Prefer server components unless interactivity
+  is needed

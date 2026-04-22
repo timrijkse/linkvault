@@ -1,0 +1,14 @@
+---
+description: Tailwind and styling rules
+globs: "**/*.css,**/*.tsx"
+---
+
+# Styling Rules
+
+- Tailwind utility-first: use className, not
+  inline styles
+- No custom CSS unless absolutely necessary
+- Color scheme: slate-50 bg, blue-600 primary,
+  slate-800 text
+- Responsive: mobile-first with sm:/md:/lg:
+- Dark mode: use dark: variant where applicable

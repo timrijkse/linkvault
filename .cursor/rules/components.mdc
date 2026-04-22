@@ -1,0 +1,12 @@
+---
+description: Rules for TSX component files
+globs: "src/components/**/*.tsx"
+---
+
+# Component Rules
+
+- Functional components only (no class components)
+- Define Props interface above the component
+- Use PascalCase for component names
+- Export as named export, not default
+- Keep components under 80 lines
