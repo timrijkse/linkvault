@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
 export default function Home() {
+  // #region agent log
+  console.log('[debug 805e02] src/app/page.tsx rendered (LinkVault home)');
+  // #endregion
+
   return (
     <div className="flex flex-1 items-center justify-center px-6 py-16">
       <main className="w-full max-w-2xl rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
