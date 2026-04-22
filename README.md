@@ -1,4 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## LinkVault
+
+LinkVault is een simpele bookmark manager.
+
+### Features
+- Bookmarks toevoegen (URL + titel + tags)
+- Bookmarks weergeven in een lijst
+- Filteren op tags
+- Bookmarks verwijderen
+- Bookmarks wijzigen
+- In-memory opslag (geen database)
+
+### Belangrijk: in-memory opslag
+Bookmarks worden **in server memory** bewaard (module-level singleton). Dat betekent:
+- Data kan verdwijnen bij **server restart** of **redeploy**
+- Bij serverless/scale-out kan data per instance verschillen
 
 ## Getting Started
 
@@ -14,11 +29,13 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+De app gebruikt de App Router onder `src/app/`. Startpunt: `src/app/page.tsx`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Gebruik
+- Lijst: `http://localhost:3000/bookmarks`
+- Nieuwe bookmark: `http://localhost:3000/bookmarks/new`
 
 ## Learn More
 
